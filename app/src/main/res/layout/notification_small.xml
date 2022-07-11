@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/purple_700"
+    android:gravity="center|start"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="7">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/notification_title"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información actualizada - titulo"
+            android:textColor="#d1e9d6"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/notification_body"
+            style="@style/TextAppearance.Compat.Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informacion - Mensaje"
+            android:textColor="#d1e9d6" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/notification_image"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="2"
+        android:src="@drawable/fondo" />
+
+</LinearLayout>
